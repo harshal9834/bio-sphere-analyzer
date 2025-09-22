@@ -8,35 +8,62 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Scientific Ocean Theme - Deep Sea Biodiversity */
+    --background: 210 20% 98%;
+    --foreground: 200 50% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 200 50% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 200 50% 10%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Ocean Deep Blue */
+    --primary: 200 100% 20%;
+    --primary-foreground: 210 20% 98%;
+    --primary-glow: 200 100% 35%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Marine Teal */
+    --secondary: 180 25% 25%;
+    --secondary-foreground: 180 20% 95%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted - Light Ocean */
+    --muted: 200 20% 95%;
+    --muted-foreground: 200 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Bioluminescent Cyan */
+    --accent: 180 100% 25%;
+    --accent-foreground: 180 20% 95%;
+
+    /* Success - Algae Green */
+    --success: 120 60% 30%;
+    --success-foreground: 120 20% 95%;
+
+    /* Warning - Coral Orange */
+    --warning: 25 95% 55%;
+    --warning-foreground: 25 20% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 200 20% 90%;
+    --input: 200 20% 95%;
+    --ring: 200 100% 35%;
 
-    --radius: 0.5rem;
+    /* Gradients */
+    --gradient-ocean: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-bio: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--success)));
+    --gradient-depth: linear-gradient(180deg, hsl(var(--primary) / 0.1), hsl(var(--primary) / 0.05));
+    
+    /* Shadows */
+    --shadow-bio: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-pulse: pulse 2s infinite;
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 

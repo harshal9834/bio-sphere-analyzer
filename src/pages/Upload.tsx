@@ -5,7 +5,7 @@ import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { Upload as UploadIcon, FileText, CheckCircle, AlertCircle, BarChart } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import heroImage from "@/assets/hero-biodiversity.jpg";
+import heroImage from "@/assets/hero-neon-biodiversity.jpg";
 
 interface QCStats {
   totalReads: number;
@@ -107,13 +107,13 @@ const Upload = () => {
                 Advanced taxonomic classification using SILVA, PR2, and NCBI databases
               </p>
               <div className="flex items-center space-x-4 text-primary-foreground/80">
-                <Badge className="bg-white/20 text-primary-foreground border-white/30">
+                <Badge className="bg-primary/20 text-primary border-primary/30 shadow-glow">
                   AI-Powered Classification
                 </Badge>
-                <Badge className="bg-white/20 text-primary-foreground border-white/30">
+                <Badge className="bg-accent/20 text-accent border-accent/30 shadow-glow">
                   Novelty Detection
                 </Badge>
-                <Badge className="bg-white/20 text-primary-foreground border-white/30">
+                <Badge className="bg-success/20 text-success border-success/30 shadow-glow">
                   Real-time Analysis
                 </Badge>
               </div>
